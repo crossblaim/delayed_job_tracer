@@ -34,7 +34,7 @@ class MySQLInterface
   # SQL helper method for inserting a delayed_job record
   def self.delayed_job_handler
     "--- !ruby/object:Delayed::PerformableMailer
-object: !ruby/class 'DelayedJobTracerMailer'
+object: !ruby/class DelayedJobTracerMailer
 method_name: :delayed_job_tracer_test_message
 args: []"
   end
