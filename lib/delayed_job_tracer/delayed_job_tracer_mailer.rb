@@ -11,12 +11,4 @@ class DelayedJobTracerMailer < ActionMailer::Base
     end
   end
 
-  def self.deliver_test_message
-    self.delayed_job_tracer_test_message.deliver
-  end
-
-  def self.enqueue_delayed_job_tracer_test_message
-    delay.delayed_job_tracer_test_message
-  end
-
 end
